@@ -2,10 +2,9 @@
 
 # android-tdd-utils
 
-Keep TDD fun on android
 
+Enables you to call protected life cycle methods on your activities
 
-Be able to call protected life cycle methods on your on Activities
 
 ```kotlin
 
