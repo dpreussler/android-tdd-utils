@@ -1,5 +1,4 @@
-[![Release](https://jitpack.io/v/dpreussler/android-tdd-utils.svg)]
-(https://jitpack.io/#dpreussler/android-tdd-utils)
+[![Release](https://jitpack.io/v/dpreussler/android-tdd-utils.svg)](https://jitpack.io/#dpreussler/android-tdd-utils)
 
 # android-tdd-utils
 
