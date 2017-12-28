@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+group = 'com.github.dpreussler'
+
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation "org.amshove.kluent:kluent:1.33"
+
+}
+repositories {
+    jcenter()
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        minSdkVersion 1
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
