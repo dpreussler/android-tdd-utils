@@ -1,4 +1,5 @@
-[![Release](https://jitpack.io/v/dpreussler/android-tdd-utils.svg)](https://jitpack.io/#dpreussler/android-tdd-utils)
+[![Release](https://jitpack.io/v/dpreussler/android-tdd-utils.svg)](https://jitpack.io/#dpreussler/android-tdd-utils) [![Build Status](https://travis-ci.org/dpreussler/android-tdd-utils.svg?branch=master)](https://travis-ci.org/dpreussler/android-tdd-utils) [![Coverage Status](https://coveralls.io/repos/github/dpreussler/android-tdd-utils/badge.svg)](https://coveralls.io/github/dpreussler/android-tdd-utils)
+
 
 # android-tdd-utils
 
