@@ -71,6 +71,8 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ["testDebugUnitTest", "crea
             '**/BuildConfig.*',
             '**/Manifest*.*',
             '**/*Test*.*',
+            '**/*Fragment.*',
+            '**/*Activity.*'
     ]
     // generated classes
     classDirectories = fileTree(
@@ -91,7 +93,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ["testDebugUnitTest", "crea
 
 coveralls {
     jacocoReportPath = 'build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml'
-    sourceDirs = files(subprojects.collect { subproject -> "${subproject.projectDir}/src/main/kotlin" }).files.absolutePath
+    sourceDirs = [file("src/main/kotlin").absolutePath]
 }
 
 tasks.coveralls {
