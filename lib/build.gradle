@@ -93,7 +93,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ["testDebugUnitTest", "crea
 
 coveralls {
     jacocoReportPath = 'build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml'
-    sourceDirs = ["src/main/kotlin"]
+    sourceDirs = [file("src/main/kotlin").absolutePath]
 }
 
 tasks.coveralls {
