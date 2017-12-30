@@ -89,10 +89,10 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ["testDebugUnitTest", "crea
     executionData = files("$buildDir/jacoco/testDebugUnitTest.exec")
 }
 
-coveralls {
-    jacocoReportPath = 'build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml'
-    sourceDirs = files(subprojects.collect { subproject -> "${subproject.projectDir}/src/main/kotlin" }).files.absolutePath
-}
+//coveralls {
+//    jacocoReportPath = 'build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml'
+//    sourceDirs = files(subprojects.collect { subproject -> "${subproject.projectDir}/src/main/kotlin" }).files.absolutePath
+//}
 
 tasks.coveralls {
     dependsOn 'jacocoTestReport'
