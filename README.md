@@ -28,7 +28,7 @@ repositories {
     maven {url "https://jitpack.io"}
 }
 
-testCompile 'com.github.dpreussler:android-tdd-utils:v0.1'
+testCompile 'com.github.dpreussler:android-tdd-utils:v0.2'
  
 ```
 
