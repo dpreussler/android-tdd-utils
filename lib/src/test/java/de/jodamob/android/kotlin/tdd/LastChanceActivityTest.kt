@@ -99,4 +99,9 @@ class LastChanceActivityTest {
     fun `can call onSaveInstanceState`() {
         tested.safeSaveInstanceState(mock())
     }
+
+    @Test
+    fun `can call onBackPressed`() {
+        tested.safeBAckPressed()
+    }
 }

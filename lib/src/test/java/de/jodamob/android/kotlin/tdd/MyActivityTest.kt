@@ -9,7 +9,9 @@ import android.app.onStop
 import android.app.onPause
 import android.app.onDestroy
 import android.app.onActivityResult
+import android.app.onNewIntent
 import android.app.onSaveInstanceState
+import android.content.Intent
 import com.nhaarman.mockito_kotlin.*
 import org.amshove.kluent.`should be equal to`
 import org.junit.Test
@@ -29,6 +31,15 @@ class MyActivityTest {
     fun `can call onPostCreate`() {
         tested.onPostCreate(null)
         tested.state `should be equal to` "postcreated"
+    }
+
+    @Test
+    fun `can call onNewIntent`() {
+        val intent = mock<Intent>{
+            on { toString() } doReturn "myIntent"
+        }
+        tested.onNewIntent(intent)
+        tested.state `should be equal to` "newIntent: myIntent"
     }
 
     @Test

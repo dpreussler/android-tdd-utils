@@ -2,6 +2,7 @@
 
 package android.app
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -18,6 +19,7 @@ fun Activity.safeSaveInstanceState(bundle: Bundle) = safe{ this.onSaveInstanceSt
 fun Activity.safePause() = safe{ this.onPause() }
 fun Activity.safeStop() = safe{ this.onStop() }
 fun Activity.safeDestroy() = safe{ this.onDestroy() }
+fun Activity.safeBAckPressed() = safe{ this.onBackPressed() }
 
 fun Fragment.safeCreate(bundle: Bundle?) = safe { this.onCreate(bundle)}
 fun Fragment.safeDestroy() = safe { this.onDestroy()}

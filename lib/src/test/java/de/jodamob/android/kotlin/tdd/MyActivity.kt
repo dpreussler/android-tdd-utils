@@ -1,8 +1,8 @@
 package de.jodamob.android.kotlin.tdd
 
 import android.app.Activity
-import android.os.Bundle
 import android.content.Intent
+import android.os.Bundle
 
 class MyActivity(var state : String = "") : Activity() {
 
@@ -12,6 +12,10 @@ class MyActivity(var state : String = "") : Activity() {
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
         state = state.plus("postcreated")
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        state = state.plus("newIntent: $intent")
     }
 
     override fun onStart() {
@@ -45,5 +49,4 @@ class MyActivity(var state : String = "") : Activity() {
     override fun onSaveInstanceState(savedInstanceState: Bundle) {
         state = state.plus("saved")
     }
-
 }
